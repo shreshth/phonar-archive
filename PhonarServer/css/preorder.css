@@ -1,0 +1,41 @@
+#googlecheckout {
+    margin-top: 20px;
+}
+
+select,input[type="file"] {
+    height: 35px;
+}
+
+.google-checkout-td {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+/* Payment form styles */
+.card-number {
+	width: 235px;	
+}
+
+.card-cvc {
+	width: 235px;
+}
+
+.card-expiry-month {
+	width: 120px;
+}
+
+.card-expiry-year {
+	width: 120px;
+}
+
+.text-input{
+	width: 235px;
+}
+
+.top-margin {
+	margin-top: 20px;
+}
+
+.btn-modal-footer {
+    margin-bottom: 0px;
+}

@@ -1,0 +1,11 @@
+.accordion-heading {
+    border: none;
+    background-color: #FAFAFA;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.accordion-body {
+    border: none;
+    background-color: #F0F0F0;
+}

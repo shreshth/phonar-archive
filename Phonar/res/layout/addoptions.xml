@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background" >
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center"
+	    android:gravity="center"
+	    android:orientation="vertical" >
+	    
+	    <!-- Add device button -->
+	    <LinearLayout
+	        android:id="@+id/adddevice"
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="30dip"
+	        android:layout_marginRight="30dip"
+	        android:layout_marginTop="15dip"
+	        android:background="@drawable/big_round_box"
+	        android:focusable="true" >
+	        <ImageView
+	            android:layout_width="70dip"
+	            android:layout_height="100dip"
+	            android:scaleType="centerInside"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:layout_marginRight="20dip"
+	            android:src="@drawable/adddevice" />
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+	            android:layout_weight="1"
+	            android:textColor="@color/black"
+	            android:text="@string/adddevice_description" />
+	    </LinearLayout>
+	    
+	    <!-- Buy device button -->
+	    <LinearLayout
+	        android:id="@+id/orderdevice"
+	        android:orientation="horizontal"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="30dip"
+	        android:layout_marginRight="30dip"
+	        android:layout_marginTop="15dip"
+	        android:background="@drawable/big_round_box"
+	        android:focusable="true" >
+	        <ImageView
+	            android:layout_width="70dip"
+	            android:layout_height="100dip"
+	            android:scaleType="centerInside"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	            android:layout_marginRight="20dip"
+	            android:src="@drawable/orderdevice" />
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_gravity="center"
+	            android:layout_weight="1"
+	            android:textColor="@color/black"
+	            android:text="@string/orderdevice_description" />
+	    </LinearLayout>
+	    
+	</LinearLayout>
+</ScrollView>

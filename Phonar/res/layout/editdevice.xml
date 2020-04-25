@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <!-- Header -->
+    <LinearLayout
+        android:id="@+id/edit_device_title_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >        
+        <TextView       
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:text="@string/editdeviceheader"
+            android:textSize="18sp" 
+            android:layout_gravity="center"
+            android:gravity="center" 
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            android:textColor="@color/black" />
+        
+        <View 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/divider_black" />        
+    </LinearLayout>    
+        
+    <!-- Form -->
+	<ScrollView
+	    android:id="@+id/edit_device_form"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/background" >
+	
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:gravity="center"
+	        android:orientation="vertical" >
+	
+	        <!-- Name -->
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal" 
+	            android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true" >
+	            
+	            <TextView
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginRight="15dp"
+	                android:gravity="right|center_vertical"
+	                android:layout_gravity="right|center_vertical"
+	                android:textColor="@color/black"
+	                android:text="@string/editname"
+	                android:layout_weight="5" />
+	
+	            <EditText
+	                android:id="@+id/name"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent"	                
+	                android:inputType="text"
+	                android:layout_gravity="center"
+	                android:layout_marginLeft="5dp"
+                    android:layout_marginRight="35dp"
+	                android:textColor="@color/black"
+	                android:maxLength="10"
+	                android:paddingLeft="5dip"
+	                android:paddingRight="5dip"
+	                android:paddingTop="3dip"
+	                android:paddingBottom="3dip"
+	                android:background="@color/light_gray"
+	                android:layout_weight="3" />
+	        </LinearLayout>
+	        
+	        <!-- Image -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="110dp"
+                android:paddingTop="20dp"
+                android:orientation="horizontal" >
+    
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/black"
+                    android:gravity="right|center_vertical"
+                    android:layout_gravity="right|center_vertical"
+                    android:text="@string/editimage" 
+                    android:layout_weight="5" />
+    
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" 
+                    android:layout_weight="3" >
+	                <ImageView
+	                    android:id="@+id/image"
+	                    android:layout_width="100dp"
+	                    android:layout_height="100dp"
+	                    android:layout_gravity="center"
+                        android:gravity="center"
+	                    android:layout_marginLeft="5dp"
+	                    android:layout_marginRight="15dp"
+	                    android:contentDescription="@string/thumbnail"	                    
+	                    android:scaleType="centerInside" />
+	             </LinearLayout>
+            </LinearLayout>
+	
+	        <!-- Interval -->
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal"
+	            android:visibility="gone" >
+	
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="fill_parent"
+	                android:layout_gravity="center"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginRight="5dp"
+	                android:textColor="@color/black"
+	                android:gravity="center"
+	                android:text="@string/edit_interval" />
+	
+	            <EditText
+	                android:id="@+id/interval"
+	                android:layout_width="0dip"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:textColor="@color/black"
+	                android:inputType="number" />
+	        </LinearLayout>
+	
+	        <!-- Polls -->
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal"
+	            android:visibility="gone" >
+	
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="fill_parent"
+	                android:layout_gravity="center"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginRight="5dp"
+	                android:gravity="center"
+	                android:textColor="@color/black"
+	                android:text="@string/edit_polls" />
+	
+	            <EditText
+	                android:id="@+id/polls"
+	                android:layout_width="0dip"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:textColor="@color/black"
+	                android:inputType="number" />
+	        </LinearLayout>
+	
+	        <!-- SOS 1 -->
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal"
+	            android:visibility="gone" >
+	
+	            <TextView
+	                android:layout_width="130dp"
+	                android:layout_height="fill_parent"
+	                android:layout_gravity="center"
+	                android:layout_marginLeft="5dp"
+	                android:layout_marginRight="5dp"
+	                android:gravity="center"
+	                android:text="@string/edit_sos" />
+	
+	            <EditText
+	                android:id="@+id/sos1"
+	                android:layout_width="0dip"
+	                android:layout_height="fill_parent"
+	                android:layout_weight="1"
+	                android:inputType="phone"
+	                android:maxLength="14" />
+	        </LinearLayout>
+	
+	        <!-- SOS 2 -->
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal"
+	            android:visibility="gone" >
+	
+	            <EditText
+	                android:id="@+id/sos2"
+	                android:layout_width="0dip"
+	                android:layout_height="fill_parent"
+	                android:layout_marginLeft="140dp"
+	                android:layout_weight="1"
+	                android:inputType="phone"
+	                android:maxLength="14" />
+	        </LinearLayout>
+	
+	        <!-- SOS 3 -->
+	        <LinearLayout
+	            android:layout_width="fill_parent"
+	            android:layout_height="50dp"
+	            android:orientation="horizontal"
+	            android:visibility="gone" >
+	
+	            <EditText
+	                android:id="@+id/sos3"
+	                android:layout_width="0dip"
+	                android:layout_height="fill_parent"
+	                android:layout_marginLeft="140dp"
+	                android:layout_weight="1"
+	                android:inputType="phone"
+	                android:maxLength="14" />
+	        </LinearLayout>		              
+	    </LinearLayout>
+	</ScrollView>
+
+	<RelativeLayout
+	    android:id="@+id/submit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"            
+        android:background="@drawable/menu_border_bottom" 
+        android:layout_alignParentBottom="true" >
+        
+        <ImageView
+            android:id="@+id/edit_device_submit_img"
+            android:scaleType="centerInside"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/submiticon"
+            android:layout_gravity="center"
+            android:gravity="center" />                       
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/editsubmit"
+            android:layout_gravity="center"
+            android:gravity="center"                
+            android:textSize="16sp" 
+            android:layout_below="@id/edit_device_submit_img" />        
+    </RelativeLayout>
+</RelativeLayout>        

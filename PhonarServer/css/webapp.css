@@ -1,0 +1,83 @@
+div#map {
+    width: auto;
+    height: 500px;
+    padding: 0%;
+}
+
+#devices-container {
+    width: auto;
+    height: 500px;
+    padding: 0%;
+}
+
+#devices-title {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20pt;
+    font-style: bold;
+    margin-bottom: 3%;
+}
+
+#devices {
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    font-size: 14pt;
+    line-height: 18px;
+}
+
+.device-row {
+    margin-bottom: 2%;
+    height: 80px;
+}
+
+.device-image-td {
+    width: 20%;
+}
+
+.device-image {
+    max-width: 80px;
+    max-height: 80px;
+    float: left;
+    text-align: left;
+    margin-left: auto;
+}
+
+.device-details-td {
+    width: 80%;
+}
+
+.device-details-table {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.device-name-td {
+    text-align: left;
+    margin-left: auto;
+    font-size: 14pt;
+    padding-bottom: 20px;
+}
+
+.device-action-td {
+    text-align: left;
+    margin-left: auto;
+    font-size: 11pt;
+}
+
+.device-edit-td {
+	padding-left: 10px;
+	text-align: right;
+}
+
+.device-remove-td {
+	padding-right: 10px;
+	padding-left: 4px;
+	text-align: left;
+}
+
+
+.device-action-a {
+    color: #000000;
+}

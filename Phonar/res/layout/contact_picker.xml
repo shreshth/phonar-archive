@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tracklayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+    
+    <!-- Title -->
+    <LinearLayout
+        android:id="@+id/contact_picker_title_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+                
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >      
+                    
+            <ImageView 
+                android:layout_width="50dip" 
+                android:layout_height="50dip"          
+                android:layout_gravity="center_vertical|left"
+                android:gravity="center_vertical|left"     
+                android:layout_weight="1"
+                android:paddingLeft="5dip"            
+                android:paddingTop="12dip"
+                android:paddingBottom="12dip"    
+                android:src="@drawable/splashbanner1" />
+        
+            <TextView       
+                android:id="@+id/request_title_text"
+                android:layout_width="200dip"
+                android:layout_height="50dip"               
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_weight="1"   
+                android:paddingLeft="8dip"            
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingRight="8dip"             
+                android:textSize="18sp"
+                android:text="@string/contact_picker_title" 
+                android:textColor="@color/black" />
+            
+            <View 
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/divider_black" 
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center_vertical|right" />
+            
+            <ImageView 
+                android:id="@+id/contact_picker_home"
+                android:layout_width="50dip" 
+                android:layout_height="50dip"          
+                android:layout_gravity="center_vertical|right"
+                android:gravity="center_vertical|right"     
+                android:layout_weight="1"
+                android:paddingLeft="8dip"            
+                android:paddingTop="12dip"
+                android:paddingBottom="12dip"
+                android:paddingRight="8dip"
+                android:background="@drawable/button_background"
+                android:clickable="true"
+                android:focusable="true"       
+                android:src="@drawable/home" />
+            
+        </LinearLayout> 
+        
+        <View 
+            android:layout_height="1dp"
+            android:layout_width="fill_parent"
+            android:background="@color/divider_black" />        
+    </LinearLayout>
+        
+    <ListView
+        android:id="@+id/contacts_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/request_list_divider"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:overScrollMode="ifContentScrolls" >
+    </ListView>
+    
+
+    <LinearLayout
+        android:id="@+id/friends_list_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="70dip"        
+        android:layout_alignParentBottom="true" >
+
+        <View
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />       
+        
+        <EditText
+            android:id="@+id/search_friends"
+            android:layout_width="0dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="@string/search_friends"
+            android:inputType="textNoSuggestions"
+            android:maxLength="20"
+            android:paddingLeft="20dip"
+            android:textColor="@color/black"
+               android:background="@drawable/big_round_box_normal" 
+            android:textSize="16sp" />	               
+            
+        <View
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />            
+
+        <ImageView
+            android:id="@+id/refresh_contact_button"
+            android:background="@drawable/big_round_box"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_gravity="center"
+            android:paddingLeft="5dip"
+            android:paddingTop="12dip"
+            android:paddingBottom="12dip"
+            android:paddingRight="5dip"
+            android:gravity="center"
+            android:src="@drawable/refresh" />
+        
+        <View
+            android:layout_width="5dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center" />       
+        
+    </LinearLayout>
+    
+</RelativeLayout>

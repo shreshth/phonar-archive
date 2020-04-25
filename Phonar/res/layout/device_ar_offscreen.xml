@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.phonar.ar.DeviceLayerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent" >
+
+        <ImageView
+            android:id="@+id/image_ar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:maxHeight="100dip"
+            android:maxWidth="100dip"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/image_ar_side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:maxHeight="100dip"
+            android:maxWidth="100dip"
+            android:scaleType="centerInside" />
+    </RelativeLayout>
+
+</com.phonar.ar.DeviceLayerLayout>

@@ -1,0 +1,132 @@
+.title-phone-container {
+    position: relative;
+    width: 250px;
+    height: 380px;
+}
+
+.title-phone {
+    position: absolute;
+    width: 200px;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.inside-title-phone {
+    position: absolute;
+    width: 170px;
+    height: 290px;
+    top: 35px;
+    left: 13px;
+    z-index: 2;
+}
+
+.title-action {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+.title-action-image {
+    width: 80px;
+    height: 110px;
+}
+
+.title-action-text {
+    color: #000000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.title-screenshot {
+    width: 170px;
+    height: 290px;
+}
+
+.title-phone-container-mobile {
+    position: relative;
+    width: 180px;
+    height: 370px;
+}
+
+.title-phone-mobile {
+    position: absolute;
+    width: 180px;
+    height: 355px;
+    top: 10px;
+    left: 40px;
+    z-index: 1;
+}
+
+.inside-title-phone-mobile {
+    position: absolute;
+    width: 152px;
+    height: 246px;
+    top: 55px;
+    left: 52px;
+    z-index: 2;
+}
+
+.title-action-mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 0px;
+}
+
+.title-action-image-mobile {
+    width: 40px;
+    height: 55px;
+    padding-bottom: 0px;
+}
+
+.title-action-text-mobile {
+    color: #000000;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+}
+
+.title-screenshot-mobile {
+    width: 152px;
+    height: 246px;
+}
+
+.info-section-title {
+    color: #ff00bb;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.info-section-text {
+    color: #555;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 20px;
+    clear: both;
+}
+
+.info-section-text.center {
+    text-align: center;
+}
+
+.info-section-img {
+    height: 30px;
+    padding-right: 15px;
+}
+
+#home_carousel {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

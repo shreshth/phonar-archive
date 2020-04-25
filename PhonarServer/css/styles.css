@@ -1,0 +1,238 @@
+body {
+    padding-top: 3%;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body-container {
+    background-color: #F5F5F5;
+    padding: 1%;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 5px #cccccc;
+    border: 1px solid #cccccc;
+}
+
+/* Navbar styles */
+.nopadding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.phonar_logo_desktop {
+    width: 198px;
+}
+
+.phonar_logo_mobile {
+    width: 140px;
+}
+
+.navbar-collapse-btn {
+    padding-top: 11px;
+}
+
+.navbar-collapse-btn-icon {
+    width: 25px;
+}
+
+.navbar {
+    color: transparent;
+    padding-bottom: 2%;
+}
+
+.navbar-inner {
+    background-color: transparent;
+    background-image: -moz-linear-gradient(top, transparent, transparent);
+    background-image: -ms-linear-gradient(top, transparent, transparent);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(transparent),
+        to(transparent) );
+    background-image: -webkit-linear-gradient(top, transparent, transparent);
+    background-image: -o-linear-gradient(top, transparent, transparent);
+    background-image: linear-gradient(top, transparent, transparent);
+    background-repeat: repeat-x;
+    filter: none;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0), inset 0 -1px 0
+        rgba(0, 0, 0, 0);
+    -moz-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0), inset 0 -1px 0
+        rgba(0, 0, 0, 0);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0), inset 0 -1px 0
+        rgba(0, 0, 0, 0);
+}
+
+/* Below are for navbar links */
+.navbar .nav>li>a {
+    font-weight: bold;
+    font-family: Open Sans;
+    font-size: 14px;
+    padding-top: 23px;
+    color: #000000;
+    background-color: transparent;
+    text-shadow: none;
+}
+
+.navbar .nav>li>a:hover {
+    padding-top: 23px;
+    background-color: transparent;
+    color: #999999;
+}
+
+.navbar .nav>li>a:active {
+    padding-top: 24px;
+    background-color: transparent;
+    color: #999999;
+}
+
+.navbar .nav>li>a.active {
+    padding-top: 23px;
+    background-color: transparent;
+    color: #999999;
+}
+
+.navbar .divider-vertical {
+    width: 1px;
+    height: 20px;
+    margin: 0 0px;
+    overflow: hidden;
+    background-color: transparent;
+    border-right: 1px solid #aaaaaa;
+    vertical-align: bottom;
+    margin-top: 24px
+}
+
+/* Below ones for navbar dropdown buttons when they are pressed */
+.nav-tabs .open .dropdown-toggle,.nav-pills .open .dropdown-toggle,.nav>.open.active>a:hover
+    {
+    color: #999999;
+}
+
+.dropdown.open .dropdown-toggle {
+    color: #999999;
+}
+
+.nav-collapse .nav>li>a:hover,.nav-collapse .dropdown-menu a:hover {
+    color: #999999;
+    background-color: transparent;
+}
+
+.nav-collapse .nav>li>a,.nav-collapse .dropdown-menu a {
+    color: #000000;
+    background-color: transparent;
+}
+
+/* Below for navbar drodown links */
+.dropdown-menu>li>a {
+    font-family: Open Sans;
+    font-size: 14px;
+    color: #000000;
+    background-color: transparent;
+    text-shadow: none;
+}
+
+.dropdown-menu>li>a:hover {
+    color: #999999;
+    background-color: transparent;
+}
+
+.dropdown-menu>li>a:active {
+    color: #999999;
+    background-color: transparent;
+}
+
+.dropdown-menu>li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.chevron {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    vertical-align: top;
+    border-top: 6px solid #000000;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    content: "";
+    opacity: 1;
+    filter: alpha(opacity = 100);
+}
+
+.dropdown .chevron {
+    margin-top: 6px;
+    margin-left: 8px;
+}
+
+.dropdown:hover .chevron,.open .chevron {
+    opacity: 0.3;
+    filter: alpha(opacity = 30);
+}
+
+/* Footer styles */
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-link {
+    padding-left: 8px;
+    padding-right: 8px;
+    color: #000000;
+}
+
+.footer-link.left {
+    padding-left: 0px;
+}
+
+.footer-link:hover {
+    color: #000000;
+}
+
+.footer-link:active {
+    color: #999999;
+}
+
+/* Misc */
+#title {
+    color: #ff00bb;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+#intro {
+    color: #555;
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+table {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+table .nocenter {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    clear: both;
+}
+
+.fit-content {
+    width: auto;
+}

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Phonar: Find Everything</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" type="image/ico" href="favicon.ico"></link>
+<link rel="shortcut icon" href="favicon.ico"></link>
+<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap-responsive.css">
+<link rel="stylesheet" type="text/css" href="css/phonar-bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="css/mobilepage.css" />
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<!-- Scripts -->
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-transition.js"></script>
+<script src="js/navbarcollapse.js"></script>
+<script src="js/jquery-css-transform.js" type="text/javascript"></script>
+<script src="js/jquery-animate-css-rotate-scale.js" type="text/javascript"></script>
+<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+        <link rel="stylesheet" type="text/css" href="css/home.css" />
+        <script src="js/bootstrap-carousel.js"></script>
+        <script src="js/home.js"></script>
+    </head>
+    <body onload="initialize()">
+<div class="container">
+    <div class="navbar">
+        <div class="navbar-inner nopadding">
+            <div class="container">
+                <a class="brand hidden-phone" href="/">
+                    <img class="phonar_logo_desktop" src="img/phonar_logo_large_website.png"/>
+                </a>
+                <a class="brand visible-phone" href="/">
+                    <img class="phonar_logo_mobile" src="img/phonar_logo_large_website.png"/>
+                </a>
+                <!-- toggle for collapsed navbar content -->
+                <a href="#" class="navbar-collapse-btn pull-right hidden-desktop" data-toggle="collapse" data-target=".nav-collapse" onclick="navbarclick();">
+                    <img id="navbar_collapse_icon_plus" name="navbar_collapse_icon_plus" src="img/plus.png" class="navbar-collapse-btn-icon" />
+                </a>
+                <!-- Phone navbar -->
+                <div class="nav-collapse hidden-desktop">
+                    <ul class="nav pull-right nav-pills">
+                    <?php if (get_userid() != null) { ?>
+                        <li>
+                            <a href="/webapp" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="/addphone" class="nav-link">Sync</a>
+                        </li>
+                        <li>
+                            <a href="/logout" class="nav-link">Logout</a>
+                        </li>
+                    <?php } else { ?>
+                        <li>
+                            <a href="/download" class="nav-link">Get the App</a>
+                        </li>
+                        <li>
+                            <a href="/preorder" class="nav-link">Pre-order Devices</a>
+                        </li>
+                        <li>
+                            <a href="/login" class="nav-link">Login</a>
+                        </li>
+                    <?php } ?>
+                    </ul>
+                </div>
+                <!-- Desktop navbar -->
+                <div class="visible-desktop">
+                    <ul class="nav pull-right nav-pills">
+                        <li>
+                            <a href="/download" class="nav-link <?php if (isset($download_nav)) echo 'active'; ?>">Get the App</a>
+                        </li>
+                        <li>
+                            <a href="/preorder" class="nav-link <?php if (isset($preorder_nav)) echo 'active'; ?>">Pre-order Devices</a>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <?php if (get_userid() == null) { ?>
+                        <li>
+                            <a href="/login" class="nav-link <?php if (isset($login_nav)) echo 'active'; ?>">Login</a>
+                        </li>
+                        <?php } else { ?>
+                        <li>
+                            <a href="/webapp" class="nav-link <?php if (isset($webapp_nav)) echo 'active'; ?>">Home</a>
+                        </li>
+                        <li class="divider-vertical"></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                                <?php
+                                $user_name = get_username();
+                                error_if(is_null($user_name));
+                                echo $user_name;
+                                ?><b class="chevron"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="/addphone" class="nav-link <?php if (isset($addphone_nav)) echo 'active'; ?>">Sync</a>
+                                </li>
+                                <li>
+                                    <a href="/logout" class="nav-link">Logout</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <?php } ?>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <hr class="top-line visible-phone spaced" />
+
+        <!-- Main boilerplate for desktop -->
+        <div class="container body-container hidden-phone">
+            <table>
+                <tr>
+                    <td>
+                        <h2 id="title">
+                            Find Everything You Care About
+                        </h2>
+                        <br />
+                        <h2 id="intro">
+                            Phonar allows you to find people and assets you care about.
+                            <br />
+                            Whether they be kids, friends, pets or cars, you can use Phonar's mobile apps or GPS devices to locate them.
+                        </h2>
+                        <table>
+                            <tr>
+                                <td class="title-action">
+                                    <a href="/download">
+                                        <img class="title-action-image" src="img/download.png"/>
+                                        <span class="title-action-text">Download App</span>
+                                    </a>
+                                </td>
+                                <td class="title-action">
+                                    <a href="/preorder">
+                                        <img class="title-action-image" src="img/order.png"/>
+                                        <span class="title-action-text">Pre-order Devices</span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="title-phone-container hidden-phone">
+                        <img class="title-phone" src="img/phones/android.png"/>
+                        <div id="home_carousel" class="carousel slide inside-title-phone">
+                            <div class="carousel-inner title-screenshot">
+                                <div class="active item title-screenshot">
+                                    <img class="title-screenshot" src="img/screenshots/track.png"/>
+                                </div>
+                                <div class="item title-screenshot">
+                                    <img class="title-screenshot" src="img/screenshots/ar.png"/>
+                                </div>
+                                <div class="item title-screenshot">
+                                    <img class="title-screenshot" src="img/screenshots/map.png"/>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-- Main boilerplate for phone -->
+        <div class="container body-container visible-phone">
+            <hr class="space-nothing" />
+            <div class="row">
+                <div class="span12">
+                    <table>
+                        <tr>
+                            <td class="left-padded right-padded">
+                                <span class="info-section-title">
+                                    Find Everything You Care About
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="left-padded right-padded top-padded">
+                                <div class="info-section-text center">
+                                    Phonar allows you to find people and assets you care about.
+                                    <hr class="space-nothing" />
+                                    Whether they be kids, friends, pets or cars, you can use Phonar's mobile apps or GPS devices to locate them.
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="hidden-phone">
+                            <td>
+                                <hr class="separator-line-wide" />
+                            </td>
+                        </tr>
+                        <tr class="hidden-phone">
+                            <td class="title-phone-container-mobile">
+                                <img class="title-phone-mobile" src="img/phones/android.png"/>
+                                <div id="home_carousel_mobile" class="carousel slide inside-title-phone-mobile">
+                                    <div class="carousel-inner title-screenshot-mobile">
+                                        <div class="active item title-screenshot-mobile">
+                                            <img class="title-screenshot-mobile" src="img/screenshots/track.png"/>
+                                        </div>
+                                        <div class="item title-screenshot-mobile">
+                                            <img class="title-screenshot-mobile" src="img/screenshots/ar.png"/>
+                                        </div>
+                                        <div class="item title-screenshot-mobile">
+                                            <img class="title-screenshot-mobile" src="img/screenshots/map.png"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <hr class="separator-line-wide" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <table>
+                                <tr>
+                                    <td class="title-action-mobile center">
+                                        <a href="/download">
+                                            <img class="title-action-image-mobile" src="img/download.png"/>
+                                            <div><span class="title-action-text-mobile">Download App</span></div>
+                                        </a>
+                                    </td>
+                                    <td class="title-action-mobile center">
+                                        <a href="/preorder">
+                                            <img class="title-action-image-mobile" src="img/order.png"/>
+                                            <div><span class="title-action-text-mobile">Pre-order Devices</span></div>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </table>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <hr class="space hidden-phone" />
+        <hr class="smallspace visible-phone" />
+
+        <!-- Features -->
+        <div class="container body-container">
+            <hr class="space-nothing" />
+            <div class="row">
+                <!-- Find friends -->
+                <div class="span4">
+                    <table>
+                        <tr>
+                            <td class="left-padded right-padded">
+                                <table class="nocenter">
+                                    <tr>
+                                        <td>
+                                            <img src="img/friends.png " class="info-section-img" />
+                                        </td>
+                                        <td>
+                                            <span class="info-section-title">
+                                                Find Your Friends
+                                            </span>
+                                        </td>
+                                    <tr>
+                                </table>
+                                <div class="info-section-text">
+                                    Lost in a new city, or want to meet up with a friend at a concert? Phonar makes it quick and easy for you to share your location and get to where you need to be.
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Find kids -->
+                <div class="span4">
+                    <table>
+                        <tr>
+                            <td class="left-padded right-padded">
+                                <table class="nocenter">
+                                    <tr>
+                                        <td>
+                                            <img src="img/children.png " class="info-section-img" />
+                                        </td>
+                                        <td>
+                                            <span class="info-section-title">
+                                                Find Your Kids
+                                            </span>
+                                        </td>
+                                    <tr>
+                                </table>
+                                <div class="info-section-text">
+                                    Going to an amusement park and don't want to put your child on a leash? Phonar allows you to have peace of mind and enjoy yourself without worrying about losing your child.
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- Find car -->
+                <div class="span4">
+                    <table>
+                        <tr>
+                            <td class="left-padded right-padded">
+                                <table class="nocenter">
+                                    <tr>
+                                        <td>
+                                            <img src="img/car.png" class="info-section-img" />
+                                        </td>
+                                        <td>
+                                            <span class="info-section-title">
+                                                Find Your Car
+                                            </span>
+                                        </td>
+                                    <tr>
+                                </table>
+                                <div class="info-section-text">
+                                    Ever forgotten where you've parked your car, or had your car stolen? Put in a Phonar device and you won't have to worry about losing your car again.
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+<div class="container">
+	<div class ="span12 footer row bottom-padded top-padded">				
+		<div class="hidden-phone">
+			<span class = "pull-right">
+			Copyright 2012 Phonar Inc. All rights reserved.
+			</span>
+			<a class="footer-link left" href="/team">Team</a>&middot;
+			<a class="footer-link" href="/contact">Contact</a>&middot;
+			<a class="footer-link" href="/faq">FAQ</a>
+		</div>
+		<div class="visible-phone center">
+			<div class="bottom-padded">
+				<a class="footer-link left" href="/team">Team</a>&middot;
+				<a class="footer-link" href="/contact">Contact</a>&middot;
+				<a class="footer-link" href="/faq">FAQ</a>
+			</div>
+			<div>
+				&copy; Phonar Inc.	
+			</div>							
+		</div>
+	</div>
+</div>
+    </body>
+</html>

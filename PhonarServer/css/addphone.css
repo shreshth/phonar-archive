@@ -1,0 +1,55 @@
+#addphone-error {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    float: center;
+}
+
+#phone-numbers {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.phone-number-row {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+}
+
+.phone-number {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.remove-phone-number {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#new-phone-form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#verify-phone-form {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#countrycode_input {
+    height: 37px;
+    width: 100px;
+    vertical-align: center;
+}
+
+#phonenumber_input {
+    height: 19px;
+    vertical-align: center;
+}

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Phonar</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!-- Main page tab strings -->
+    <string name="tab_track">find</string>
+    <string name="tab_ar">lens</string>
+    <string name="tab_map">map</string>
+
+    <!-- Track tab strings -->    
+    <string name="request_add_device">Add a Device</string>
+    <string name="request_add_contact">Add a Contact</string>
+    <string name="request_no_device">You haven\'t added any devices</string>
+    <string name="request_no_contact">You haven\'t added any contacts</string>
+    <string name="request_find_device">Request location</string>
+    <string name="request_edit_device">Edit device</string>
+    <string name="request_remove_device">Remove</string>
+    <string name="request_title_device">My Devices</string>
+    <string name="request_title_contact">Recent contacts</string>
+    <string name="invalid_qrcode">The QR code is not a valid Phonar device code.</string>
+    <string name="editname">Name</string>
+    <string name="editimage">Image\u000A(click to edit)</string>
+    <string name="editsubmit">Save</string>
+    <string name="captureimage">Capture photo</string>
+    <string name="selectimage">Select photo from gallery</string>
+    <string name="lastlocationat">Located\u0020</string>
+    <string name="edit_interval">Tracking interval (minutes):\u0020</string>
+    <string name="edit_polls">Number of polls:\u0020</string>
+    <string name="edit_sos">Emergency numbers:\u0020</string>
+    <string name="editdeviceheader">Customize Device</string>
+    <string name="days">\u0020days\u0020</string>
+    <string name="hours">\u0020hours\u0020</string>
+    <string name="minutes">\u0020minutes\u0020</string>
+    <string name="seconds">a few seconds\u0020</string>
+    <string name="day">\u0020day\u0020</string>
+    <string name="hour">\u0020hour\u0020</string>
+    <string name="minute">\u0020minute\u0020</string>
+    <string name="ago">ago.</string>
+    <string name="battery">Battery:</string>
+    <string name="thumbnail">Device thumbnail</string>
+    <string name="phonenumber">Enter your phone number</string>
+    <string name="phonenumber_re">Re-enter your phone number</string>
+    <string name="phonenumber_country_dialog_title">Select country:</string>
+    <string name="verifynumber">Verify</string>
+    <string name="resend_verification_code">Resend</string>
+    <string name="invalid_verification">Verification failed.</string>
+    <string name="cancel">Cancel</string>
+    <string name="clicklink">Click to share your location:\u0020</string>
+    <string name="friendmessage">(Add optional message)</string>
+    <string name="smsfriend">Request location via SMS?</string>
+    <string name="send">Send</string>
+    <string name="sending">Sending request&#8230;</string>
+    <string name="select_contact_phone_number">Pick a phone number for this contact:</string>
+    <string name="invalid_phone">Invalid phone number.</string>
+    <string name="verifynumber_msg">Your phone number will be used to identify you to the people you know. Please make sure that you are capable of receiving texts on this number.\u000A</string>
+    <string name="google_voice_msg">Due to the limitations of Google Voice, texts sent by Phonar will be sent from your non-Google Voice number.</string>
+    <string name="smsfriend_msg">Your contact does not have the Phonar app installed. Charges may apply based on your cell phone plan.</string>
+    <string name="smscode_msg">We are trying to register you automatically. This could take up to a minute. \u000A\u000AIf you receive a verification code via SMS, please enter it here.\u000A</string>
+    <string name="smscode_title">Enter verification code</string>
+    <string name="smscode_auto_verified_msg">Verifying automatically.</string>
+    <string name="buttonon">Stop</string>
+    <string name="buttonoff">Track</string>
+    <string name="ok">OK</string>
+    <string name="waiting">Location requested.</string>
+    <string name="is_google_voice">Check here if this is a Google Voice number.</string>
+    <string name="search_friends">Search</string>
+    <string name="no_contacts">no contacts found</string>
+    <string name="loading">loading&#8230;</string>
+    <string name="low_power">\u0020is low on power.</string>
+    
+    <!-- Review Dialog strings -->
+    <string name="review_ok">Review</string>
+    <string name="review_cancel">Skip</string>
+    <string name="review_title">Review the Phonar App</string>
+    <string name="review_message">Your feedback is really important to us. Please considering reviewing the app on Play Store and letting us know about issues, suggestions or feature requests.</string>
+    
+    <!-- Menu options -->
+    <string name="settings">Settings"</string>
+    <string name="add_friend">Find friend</string>
+    <string name="add_device">Add device</string>
+    <string name="add_contact">Add contact</string>
+    <string name="all_devices">My devices</string>
+    <string name="all_contacts">Recent</string>
+    <string name="buy_device">Buy device</string>
+    
+    <!-- AddOptionsActivity strings -->
+    <string name="findfriend_description">Locate someone from your contacts list. They only need a smartphone, and don\'t need to have Phonar installed.</string>
+    <string name="adddevice_description">Add a Phonar device. You can use the device to keep track of your loved ones or other high-value assets. </string>
+    <string name="orderdevice_description">Don&#8217;t have a Phonar device yet? Order one right now. </string>
+
+    <!-- AR Activity Strings -->
+    <string name="nolocation">Finding your location&#8230; </string>
+    <string name="miles_short">mi</string>
+    <string name="feet_short">ft</string>
+    <string name="no_camera">Could not connect to backward-facing camera.</string>
+    <string name="magnetic_interference">The lens works best outside and away from other electronic devices.</string>
+
+    <!-- GeoUtils strings -->
+    <string name="geo_source_alert_gps_only">In order for Phonar to accurately read your location, please turn on GPS in your location settings.</string>
+    <string name="geo_source_alert_wifi_only">In order for Phonar to accurately read your location, please turn on wireless networks in your location settings.</string>
+    <string name="geo_source_alert_both">In order for Phonar to accurately read your location, please turn on GPS and wireless networks in your location settings.</string>
+    <string name="geo_source_alert_title">Improve location</string>
+    <string name="geo_source_alert_positive">Settings</string>
+    <string name="geo_source_alert_negative">Skip</string>
+    <string name="network_not_connected">Network disconnected.</string>
+    <string name="turn_on_network">In order for Phonar to work properly, you need to turn on your wifi or 3G. Would you like to go to your settings to do so?</string>
+    <string name="turn_on_network_toast">In order for Phonar to work properly, you need to turn on your wifi or 3G.</string>
+    <string name="connect_network">In order for Phonar to work properly, you need to be connected to the Internet. Would you like to go to your settings to do so?</string>
+    <string name="connect_network_toast">In order for Phonar to work properly, you need to be connected to the Internet.</string>
+    <string name="location_not_sent">Location could not be sent.</string>
+
+    <!-- Device Options strings -->
+    <string name="refresh_location">Refresh location</string>
+    <string name="navigate_to">Navigate to location</string>
+    <string name="call">Call</string>
+    <string name="text_msg">Text</string>
+
+    <!-- Friend finder location strings -->
+    <string name="location_request">\u0020has requested your location.</string>
+    <string name="location_request_confirm">Share location with\u0020</string>
+    <string name="yes_one_time">Current location only</string>
+    <string name="yes_track">Share for 15 minutes</string>
+    <string name="no_share">Don\'t share</string>
+    <string name="location_received">\u0020has accepted your Phonar request.</string>
+    <string name="location_denied">\u0020was unable to share their location with you.</string>
+    <string name="location_being_tracked">Your location is being shared.</string>
+    <string name="location_being_tracked_with">Your location is being shared with\u0020</string>
+    <string name="location_track_stop">Stop sharing location with:</string>
+    <string name="location_track_stop_one">Stop sharing location with\u0020</string>
+
+    <!-- Settings strings -->    
+    <string name="setting_notification_header">Notification settings</string>
+    <string name="setting_default_summary">Use default settings</string>
+    <string name="setting_default_title">Default</string>
+    <string name="setting_vibrate_summary">Vibrate on incoming notification</string>
+    <string name="setting_vibrate_title">Vibrate</string>
+    <string name="setting_ringtone_summary">Set your notification ringtone</string>
+    <string name="setting_ringtone_title">Notification ringtone</string>
+
+    <!-- Others -->
+    <string name="upgrade_available">New version available. Click here to upgrade.</string>
+    <string name="contact_picker_title">Choose a contact</string>
+</resources>

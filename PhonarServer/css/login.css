@@ -1,0 +1,22 @@
+#login-options {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-provider-button {
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-top: 2%;
+    width: 64px;
+    height: 64px;
+}
+
+#login-error {
+    float: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

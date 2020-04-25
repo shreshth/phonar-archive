@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+    <RelativeLayout 
+        android:id="@+id/ar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+        
+    </RelativeLayout>
+            
+    <!-- Menu -->
+    <LinearLayout
+        android:id="@+id/add_button_menu_ar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:baselineAligned="false"
+        android:orientation="horizontal" 
+        android:visibility="gone" >
+        
+        <!-- All devices/recent contact -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"            
+            android:background="@drawable/menu_border_bottom"
+            android:layout_weight="1">
+            
+            <ImageView
+                android:id="@+id/menu_image_device_all"
+                android:scaleType="centerInside"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center" />                       
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"                
+                android:textSize="16sp" 
+                android:layout_below="@id/menu_image_device_all" />        
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/divider_black" />
+        
+        <!-- Add device/contact -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"            
+            android:background="@drawable/menu_border_bottom"
+            android:layout_weight="1">
+            
+            <ImageView
+                android:id="@+id/menu_image_device_add"
+                android:scaleType="centerInside"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/plus"
+                android:layout_gravity="center"
+                android:gravity="center" />                       
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"                
+                android:layout_gravity="center"
+                android:gravity="center"                
+                android:textSize="16sp" 
+                android:layout_below="@id/menu_image_device_add" />        
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="1dp"
+            android:layout_height="fill_parent"
+            android:background="@color/divider_black" />
+        
+        <!-- Settings -->
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"            
+            android:background="@drawable/menu_border_bottom"
+            android:layout_weight="1">
+            
+            <ImageView
+                android:id="@+id/menu_image_settings"
+                android:scaleType="centerInside"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:src="@drawable/gear"
+                android:layout_gravity="center"
+                android:gravity="center" />                       
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings"
+                android:layout_gravity="center"
+                android:gravity="center"                
+                android:textSize="16sp" 
+                android:layout_below="@id/menu_image_settings" />        
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/setting_notification_header" >
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="notification default?"
+            android:summary="@string/setting_default_summary"
+            android:title="@string/setting_default_title" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="notification vibrate?"
+            android:summary="@string/setting_vibrate_summary"
+            android:title="@string/setting_vibrate_title" />
+
+        <RingtonePreference
+            android:key="notification ringtone"
+            android:ringtoneType="notification"
+            android:summary="@string/setting_ringtone_summary"
+            android:title="@string/setting_ringtone_title" />
+    </PreferenceCategory>
+
+    
+    <PreferenceCategory android:title="Developer Options" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="friends mode?"
+            android:summary="App will be used to track friends instead of devices."
+            android:title="Friends Mode" />
+    </PreferenceCategory>
+    
+</PreferenceScreen>
